@@ -6,12 +6,12 @@ const Weather = ({
   date = "",
   day = "",
   hour = "",
-  city = "",
+  city = "Malang",
   children = 0,
 }) => {
   if (city == "") {
     return (
-      <div className="flex w-1/4 justify-center items-center flex-col h-full">
+      <div className="flex justify-center items-center flex-col h-full">
         <img src={image} alt="" className="w-1/2 my-4" />
         <div className="flex my-4 mb-0">
           <div>
@@ -26,7 +26,7 @@ const Weather = ({
     );
   } else {
     return (
-      <div className="flex w-1/4 justify-center items-center flex-col h-full">
+      <div className="flex justify-center items-center flex-col h-full">
         <img src={image} alt="" className="w-1/2 my-4" />
         <div className="flex my-4 mb-0">
           <div>
